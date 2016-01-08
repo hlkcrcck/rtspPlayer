@@ -4,6 +4,9 @@
         version="0.0.1">
 
   <name>rtspPlayer</name>
+  <description>
+      RTSP player plugin.
+  </description>
 
   <engines>
     <engine name="cordova" version=">=3.4.0"/>
