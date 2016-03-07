@@ -718,6 +718,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/MediaStreamingLib/FFMpegiOS/lib",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = include/MediaStreamingLib;
@@ -750,6 +751,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/MediaStreamingLib/FFMpegiOS/lib",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = include/MediaStreamingLib;
