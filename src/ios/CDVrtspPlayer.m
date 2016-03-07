@@ -4,12 +4,6 @@
 
 @synthesize viewController;
 
--(CDVPlugin*) initWithWebView:(UIWebView*)theWebView
-{
-	self = [super initWithWebView:theWebView];
-	return self;
-}
-
 - (void)showStreamPlayer:(NSString*)url
 {
 	if (self.streamViewController == nil) {
