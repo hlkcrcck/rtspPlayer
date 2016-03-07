@@ -32,6 +32,7 @@
     <framework src="libbz2.dylib" />
     <framework src="libiconv.dylib" />
 
+    <header-file src="lib/MediaStreamingLib/MediaStreamingLib/RTSPViewController.h" target-dir="rtspplayer/MediaStreamingLib"/>
     <header-file src="src/ios/CDVrtspPlayer.h" target-dir="rtspplayer"/>
     <source-file src="src/ios/CDVrtspPlayer.m" target-dir="rtspplayer"/>
   </platform>

@@ -1,5 +1,5 @@
 #import <Cordova/CDV.h>
-#import <MediaStreamingLib/MediaStreamingLib/RTSPViewController.h>
+#import <MediaStreamingLib/RTSPViewController.h>
 
 
 @interface CDVrtspPlayer : CDVPlugin {
