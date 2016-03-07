@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         id="com.madtatu.rtspPlayer"
-        version="0.0.1">
+        version="0.0.2">
 
   <name>rtspPlayer</name>
   <description>
@@ -32,6 +32,7 @@
     <framework src="libbz2.dylib" />
     <framework src="libiconv.dylib" />
 
+    <header-file src="lib/MediaStreamingLib/MediaStreamingLib/RTSPViewController.h" target-dir="rtspplayer/MediaStreamingLib"/>
     <header-file src="src/ios/CDVrtspPlayer.h" target-dir="rtspplayer"/>
     <source-file src="src/ios/CDVrtspPlayer.m" target-dir="rtspplayer"/>
   </platform>
