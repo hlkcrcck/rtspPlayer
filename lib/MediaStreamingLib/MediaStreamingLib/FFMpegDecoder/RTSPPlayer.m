@@ -2,6 +2,10 @@
 #import "Utilities.h"
 #import "AudioStreamer.h"
 
+#ifndef AVCODEC_MAX_AUDIO_FRAME_SIZE
+# define AVCODEC_MAX_AUDIO_FRAME_SIZE 192000 // 1 second of 48khz 32bit audio
+#endif
+
 @interface RTSPPlayer ()
 @property (nonatomic, retain) AudioStreamer *audioController;
 @end
@@ -136,7 +140,7 @@
     }
 	
     // Allocate video frame
-    pFrame = av_frame_alloc();
+    pFrame = avcodec_alloc_frame();
 			
 	outputWidth = pCodecCtx->width;
 	self.outputHeight = pCodecCtx->height;
@@ -287,7 +291,7 @@ initError:
 - (void)setupAudioDecoder
 {    
     if (audioStream >= 0) {
-//        _audioBufferSize = AVCODEC_MAX_AUDIO_FRAME_SIZE;
+        _audioBufferSize = AVCODEC_MAX_AUDIO_FRAME_SIZE;
         _audioBuffer = av_malloc(_audioBufferSize);
         _inBuffer = NO;
         
