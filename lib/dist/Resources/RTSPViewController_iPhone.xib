@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RTSPViewController">
@@ -16,8 +16,18 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wJI-c4-a0z">
-                    <rect key="frame" x="0.0" y="8" width="46" height="30"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aMh-x5-GMV">
+                    <rect key="frame" x="0.0" y="40" width="600" height="560"/>
+                    <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                        <rect key="frame" x="8" y="59" width="384" height="255"/>
+                    </variation>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wJI-c4-a0z">
+                    <rect key="frame" x="275" y="0.0" width="50" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="3LB-Kg-MCY"/>
+                        <constraint firstAttribute="width" constant="50" id="qkM-JO-7t1"/>
+                    </constraints>
                     <state key="normal" title="Back">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
@@ -28,12 +38,6 @@
                         <action selector="stopButtonAction:" destination="-1" eventType="touchUpInside" id="cG7-Zz-KTV"/>
                     </connections>
                 </button>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aMh-x5-GMV">
-                    <rect key="frame" x="0.0" y="54" width="600" height="546"/>
-                    <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                        <rect key="frame" x="8" y="59" width="384" height="255"/>
-                    </variation>
-                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
@@ -41,10 +45,27 @@
                 <constraint firstItem="aMh-x5-GMV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="DJY-fR-Eob"/>
                 <constraint firstItem="wJI-c4-a0z" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="GAd-gK-LlO"/>
                 <constraint firstAttribute="centerX" secondItem="aMh-x5-GMV" secondAttribute="centerX" id="IpS-xO-clT"/>
-                <constraint firstItem="wJI-c4-a0z" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="VvJ-vg-Nfs"/>
+                <constraint firstItem="aMh-x5-GMV" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="Trc-Q2-v9t"/>
+                <constraint firstItem="wJI-c4-a0z" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="VvJ-vg-Nfs"/>
+                <constraint firstItem="wJI-c4-a0z" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="buu-fh-HFW"/>
+                <constraint firstItem="aMh-x5-GMV" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="cZZ-J5-inB"/>
                 <constraint firstAttribute="centerY" secondItem="aMh-x5-GMV" secondAttribute="centerY" id="h27-Dd-fgM"/>
                 <constraint firstAttribute="trailing" secondItem="aMh-x5-GMV" secondAttribute="trailing" id="jCe-bN-Aep"/>
+                <constraint firstAttribute="bottom" secondItem="aMh-x5-GMV" secondAttribute="bottom" id="lkg-4h-zZR"/>
+                <constraint firstItem="aMh-x5-GMV" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="nGA-Qv-h6Q"/>
+                <constraint firstItem="aMh-x5-GMV" firstAttribute="top" secondItem="wJI-c4-a0z" secondAttribute="bottom" id="uRO-BK-DSa"/>
             </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="6wJ-SZ-Kd6"/>
+                    <exclude reference="DJY-fR-Eob"/>
+                    <exclude reference="IpS-xO-clT"/>
+                    <exclude reference="h27-Dd-fgM"/>
+                    <exclude reference="jCe-bN-Aep"/>
+                    <exclude reference="nGA-Qv-h6Q"/>
+                    <exclude reference="GAd-gK-LlO"/>
+                </mask>
+            </variation>
             <point key="canvasLocation" x="671" y="492"/>
         </view>
     </objects>
