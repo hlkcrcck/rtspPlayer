@@ -17,19 +17,22 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aMh-x5-GMV">
-                    <rect key="frame" x="0.0" y="40" width="600" height="560"/>
+                    <rect key="frame" x="0.0" y="60" width="600" height="540"/>
                     <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                         <rect key="frame" x="8" y="59" width="384" height="255"/>
                     </variation>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wJI-c4-a0z">
-                    <rect key="frame" x="275" y="0.0" width="50" height="40"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wJI-c4-a0z">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="61"/>
+                    <color key="backgroundColor" red="0.0" green="0.63137254901960782" blue="0.60392156862745094" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="40" id="3LB-Kg-MCY"/>
-                        <constraint firstAttribute="width" constant="50" id="qkM-JO-7t1"/>
+                        <constraint firstAttribute="height" constant="61" id="3LB-Kg-MCY"/>
+                        <constraint firstAttribute="width" constant="600" id="qkM-JO-7t1"/>
                     </constraints>
+                    <inset key="contentEdgeInsets" minX="0.0" minY="15" maxX="0.0" maxY="0.0"/>
                     <state key="normal" title="Back">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" red="0.5" green="0.46798198556411141" blue="0.48412350553246031" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
                     <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                         <rect key="frame" x="346" y="21" width="46" height="30"/>
@@ -53,17 +56,17 @@
                 <constraint firstAttribute="trailing" secondItem="aMh-x5-GMV" secondAttribute="trailing" id="jCe-bN-Aep"/>
                 <constraint firstAttribute="bottom" secondItem="aMh-x5-GMV" secondAttribute="bottom" id="lkg-4h-zZR"/>
                 <constraint firstItem="aMh-x5-GMV" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="nGA-Qv-h6Q"/>
-                <constraint firstItem="aMh-x5-GMV" firstAttribute="top" secondItem="wJI-c4-a0z" secondAttribute="bottom" id="uRO-BK-DSa"/>
+                <constraint firstItem="aMh-x5-GMV" firstAttribute="top" secondItem="wJI-c4-a0z" secondAttribute="bottom" constant="-1" id="uRO-BK-DSa"/>
             </constraints>
             <variation key="default">
                 <mask key="constraints">
+                    <exclude reference="GAd-gK-LlO"/>
                     <exclude reference="6wJ-SZ-Kd6"/>
                     <exclude reference="DJY-fR-Eob"/>
                     <exclude reference="IpS-xO-clT"/>
                     <exclude reference="h27-Dd-fgM"/>
                     <exclude reference="jCe-bN-Aep"/>
                     <exclude reference="nGA-Qv-h6Q"/>
-                    <exclude reference="GAd-gK-LlO"/>
                 </mask>
             </variation>
             <point key="canvasLocation" x="671" y="492"/>
