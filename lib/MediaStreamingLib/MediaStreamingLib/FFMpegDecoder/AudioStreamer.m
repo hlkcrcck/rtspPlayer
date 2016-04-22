@@ -144,6 +144,19 @@ void audioQueueIsRunningCallback(void *inClientData, AudioQueueRef inAQ,
             NSLog(@"found audio codec mulaw");
             break;
         }
+        case CODEC_ID_PCM_ALAW:
+        {
+            audioStreamBasicDesc_.mFormatID = kAudioFormatALaw;
+            audioStreamBasicDesc_.mSampleRate = 8000.0;
+            audioStreamBasicDesc_.mFormatFlags = 0;
+            audioStreamBasicDesc_.mFramesPerPacket = 1;
+            audioStreamBasicDesc_.mChannelsPerFrame = 1;
+            audioStreamBasicDesc_.mBitsPerChannel = 8;
+            audioStreamBasicDesc_.mBytesPerPacket = 1;
+            audioStreamBasicDesc_.mBytesPerFrame = 1;
+            NSLog(@"found audio codec alaw");
+            break;
+        }
         default:
         {
             NSLog(@"Error: audio format '%s' (%d) is not supported", _audioCodecContext->codec_descriptor->name, _audioCodecContext->codec_id);

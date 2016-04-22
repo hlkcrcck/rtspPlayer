@@ -6,16 +6,17 @@
 
 - (void)showStreamPlayer:(NSString*)url
 {
-	if (self.streamViewController == nil) {
+    self.hasPendingOperation = YES;
+
 		self.streamViewController = [[RTSPViewController alloc] initWithNibName:@"RTSPViewController_iPhone" bundle:nil];
-	}
+
 	[self.streamViewController setStreamUrl:url];
 
 	[self.viewController presentViewController:self.streamViewController animated:YES completion:nil];
 	
 }
 
-- (void)playRTSP:(CDVInvokedUrlCommand*)command
+- (void)playRTSP:(CDVInvokedUrlCommand*) command
 {
 	CDVPluginResult* pluginResult = nil;
 	NSString* streamURL = [command.arguments objectAtIndex:0];

@@ -42,7 +42,7 @@
 {
 	[super viewDidLoad];
 	
-	[imageView setContentMode:UIViewContentModeCenter];
+	//[imageView setContentMode:UIViewContentModeCenter];
 }
 
 - (void)didReceiveMemoryWarning

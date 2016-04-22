@@ -21,7 +21,7 @@
 @property (nonatomic, retain) IBOutlet UIImageView *imageView;
 @property (nonatomic, retain) IBOutlet UIButton *playButton;
 @property (nonatomic, retain) IBOutlet UIButton *stopButton;
-@property (nonatomic, retain) RTSPPlayer *video;
+@property (nonatomic, retain) RTSPPlayer* video;
 @property (nonatomic, retain) NSString *mediaURL;
 
 - (IBAction)playButtonAction:(id)sender;
